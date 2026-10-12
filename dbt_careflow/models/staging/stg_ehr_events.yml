@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: stg_ehr_events
+    description: "Clean staging view of synthetic emergency department events."
+    columns:
+      - name: case_id
+        data_tests:
+          - not_null
+
+      - name: activity
+        data_tests:
+          - not_null
+
+      - name: event_timestamp
+        data_tests:
+          - not_null
+
+      - name: form_complete
+        data_tests:
+          - not_null
